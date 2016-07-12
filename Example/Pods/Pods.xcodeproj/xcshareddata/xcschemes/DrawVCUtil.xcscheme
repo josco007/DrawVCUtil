@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '06F63C7732DECC90065CCF40'
+               BlueprintIdentifier = '4BD944328D6FC4915DAF24B5'
                BlueprintName = 'DrawVCUtil'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'DrawVCUtil.framework'>

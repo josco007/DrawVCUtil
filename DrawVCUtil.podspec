@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: I wrote this pod because I have a few applications where a person must draw a signature.
-      In this pod you can make a draw and export it to an UImage.
+      In this pod you can make a draw and export it to an UIImage.
                        DESC
 
   s.homepage         = 'https://github.com/josco007/DrawVCUtil'

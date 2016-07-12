@@ -21,7 +21,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		DC1684A21D359845004F6A39 /* DVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1684A11D359845004F6A39 /* DVViewController.xib */; };
 		E9B44CB82DC77F90C777B57D /* Pods_DrawVCUtil_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4969B051AD993FD7477463B0 /* Pods_DrawVCUtil_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,10 +61,10 @@
 		60F378CBD64F6CE200042009 /* Pods-DrawVCUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawVCUtil_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawVCUtil_Example/Pods-DrawVCUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6618DDC1E736ABD7FD930A24 /* Pods-DrawVCUtil_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawVCUtil_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawVCUtil_Tests/Pods-DrawVCUtil_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		679EDCD9AC9ACFB050050FDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B500E7738627D5D59DDA6558 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B5B1A33D81C117D8958113DD /* Pods_DrawVCUtil_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawVCUtil_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA56A76D213CF975E690ED55 /* DrawVCUtil.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DrawVCUtil.podspec; path = ../DrawVCUtil.podspec; sourceTree = "<group>"; };
+		DC1684A11D359845004F6A39 /* DVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DVViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +132,8 @@
 			children = (
 				6003F59C195388D20070C39A /* DVAppDelegate.h */,
 				6003F59D195388D20070C39A /* DVAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DVViewController.h */,
+				DC1684A11D359845004F6A39 /* DVViewController.xib */,
 				6003F5A6195388D20070C39A /* DVViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -276,8 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				DC1684A21D359845004F6A39 /* DVViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

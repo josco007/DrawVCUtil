@@ -8,11 +8,12 @@
 
 
 @import UIKit;
+@import DrawVCUtil;
 
 
-@interface DVViewController : UIViewController{
+@interface DVViewController : UIViewController <DrawVCDelegate>{
     
-
+    DrawVC *drawVC;
     
 }
 

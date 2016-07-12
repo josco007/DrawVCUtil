@@ -1,9 +1,9 @@
 {
   "name": "DrawVCUtil",
   "version": "0.1.0",
-  "summary": "A short description of DrawVCUtil.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DrawVCUtil",
+  "summary": "A viewcontroller where you can draw something",
+  "description": "TODO: I wrote this pod because I have a few applications where a person must draw a signature.\n      In this pod you can make a draw and export it to an UImage.",
+  "homepage": "https://github.com/josco007/DrawVCUtil",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "josco007": "noe_is10@msn.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DrawVCUtil.git",
+    "git": "https://github.com/josco007/DrawVCUtil.git",
     "tag": "0.1.0"
   },
   "platforms": {

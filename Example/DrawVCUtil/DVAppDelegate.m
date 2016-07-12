@@ -9,10 +9,25 @@
 #import "DVAppDelegate.h"
 
 @implementation DVAppDelegate
+@synthesize dvViewController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    dvViewController = [DVViewController new];
+    
+    UINavigationController *myNavigationC = [[UINavigationController alloc] initWithRootViewController:dvViewController];
+    [_window setRootViewController: myNavigationC];
+    [_window makeKeyAndVisible];
+    
+
+
+    
     return YES;
 }
 

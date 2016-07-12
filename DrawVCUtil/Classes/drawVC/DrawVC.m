@@ -5,7 +5,7 @@
 //  Created by Noe Miranda on 4/24/14.
 //  Copyright (c) 2014 Interceramic. All rights reserved.
 //
-//  if you want that this viewcontroller show in landscape you can put this in appDelegate:
+//  if you want this viewcontroller show in landscape you can put this in appDelegate:
 //
 //func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
 //    
@@ -130,7 +130,9 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
 }
 
 -(void) sendDrawing{
-    [self.delegate drawVC:self imagen:imageView.image];
+    if (self.delegate != nil){
+        [self.delegate drawVC:self imagen:imageView.image];
+    }
     
     //[[self navigationController] popViewControllerAnimated:FALSE];
 }
@@ -190,7 +192,9 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     /*NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
      */
-    [_delegate drawVC:self viewDidAppearFinished:nil];
+    if (_delegate != nil){
+        [_delegate drawVC:self viewDidAppearFinished:nil];
+    }
 }
 
 
