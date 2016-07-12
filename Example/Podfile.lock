@@ -1,0 +1,35 @@
+PODS:
+  - DrawVCUtil (0.1.0)
+  - Expecta (1.0.5)
+  - Expecta+Snapshots (3.0.0):
+    - Expecta (~> 1.0)
+    - FBSnapshotTestCase/Core (~> 2.0)
+    - Specta (~> 1.0)
+  - FBSnapshotTestCase (2.1.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.2)
+  - FBSnapshotTestCase/Core (2.1.2)
+  - FBSnapshotTestCase/SwiftSupport (2.1.2):
+    - FBSnapshotTestCase/Core
+  - Specta (1.0.5)
+
+DEPENDENCIES:
+  - DrawVCUtil (from `../`)
+  - Expecta
+  - Expecta+Snapshots
+  - FBSnapshotTestCase
+  - Specta
+
+EXTERNAL SOURCES:
+  DrawVCUtil:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DrawVCUtil: 3416a418ff0c64d2094da4357c61a70dca45672e
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
+  FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+
+PODFILE CHECKSUM: b2ed2a3426ba8506e4b76a5e84bcd74070c3cbeb
+
+COCOAPODS: 1.0.0.beta.2

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DrawVCUtil'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DrawVCUtil.'
+  s.summary          = 'A viewcontroller where you can draw something'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: I wrote this pod because I have a few applications where a person must draw a signature.
+      In this pod you can make a draw and export it to an UImage.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/DrawVCUtil'
+  s.homepage         = 'https://github.com/josco007/DrawVCUtil'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'josco007' => 'noe_is10@msn.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/DrawVCUtil.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/josco007/DrawVCUtil.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

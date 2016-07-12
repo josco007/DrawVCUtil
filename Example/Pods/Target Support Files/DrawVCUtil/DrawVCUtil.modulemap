@@ -1,0 +1,6 @@
+framework module DrawVCUtil {
+  umbrella header "DrawVCUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,8 +6,14 @@
 //  Copyright (c) 2016 josco007. All rights reserved.
 //
 
+
 @import UIKit;
 
-@interface DVViewController : UIViewController
+
+@interface DVViewController : UIViewController{
+    
+
+    
+}
 
 @end
