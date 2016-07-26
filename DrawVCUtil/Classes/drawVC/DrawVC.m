@@ -43,6 +43,8 @@
 @synthesize isPresented;
 @synthesize tmeBetweenCleanAndSaveView;
 @synthesize showSaveAlert;
+@synthesize blockedMessage;
+@synthesize blockedMessageStr;
 
 CGPoint midPoint(CGPoint p1, CGPoint p2)
 {
@@ -137,6 +139,23 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     //[[self navigationController] popViewControllerAnimated:FALSE];
 }
 
+-(void) blockDrawWithMessage:(NSString*)pMessage{
+    
+    blockedMessage = true;
+    blockedMessageStr = pMessage;
+    
+    [blockViewMessage setFrame:imageView.frame];
+    [blockViewMessageLbl setText:pMessage];
+    
+    [self.view addSubview:blockViewMessage];
+    
+}
+
+-(void) removeBlockViewMessage{
+    blockedMessage = false;
+    [blockViewMessage removeFromSuperview];
+}
+
 #pragma mark - alertview delegates
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (alertView == confirmarLimpiar) {
@@ -182,6 +201,10 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     }
     tituloFirmaLbl.text = _titleLbl;
     //tituloFirmaLbl.transform = CGAffineTransformMakeRotation(M_PI_2);
+    
+    if (blockedMessage){
+        [self blockDrawWithMessage:blockedMessageStr];
+    }
 
     
 

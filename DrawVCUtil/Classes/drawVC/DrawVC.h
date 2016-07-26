@@ -23,9 +23,10 @@
     //UIAlertsView
     UIAlertView *confirmarLimpiar;
     UIAlertView *confirmarGuardar;
+    
+    BOOL blockedMessage;
+    NSString * blockedMessageStr;
 
-    
-    
 
     
 #pragma mark - IBOutlets
@@ -38,13 +39,21 @@
     IBOutlet UILabel *tituloFirmaLbl;
     //UIViews
     IBOutlet UIView *tmeBetweenCleanAndSaveView;
+    IBOutlet UIView *blockViewMessage;
+    IBOutlet UILabel *blockViewMessageLbl;
+    
 
     
 }
 @property (nonatomic) BOOL isPresented;
+@property (nonatomic) BOOL blockedMessage;
+@property (nonatomic) NSString *blockedMessageStr;
 @property (nonatomic) BOOL showSaveAlert;
 @property (nonatomic, unsafe_unretained) id <DrawVCDelegate> delegate;
 @property (nonatomic)  NSString *titleLbl;
 @property (strong, nonatomic) IBOutlet UIView *tmeBetweenCleanAndSaveView;
+
+-(void) blockDrawWithMessage:(NSString*)pMessage;
+-(void) removeBlockViewMessage;
 
 @end

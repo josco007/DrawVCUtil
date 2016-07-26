@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrawVC">
             <connections>
+                <outlet property="blockViewMessage" destination="5sm-1f-m6X" id="aTk-d5-7ba"/>
+                <outlet property="blockViewMessageLbl" destination="2kb-Cn-hat" id="eHD-IL-oMM"/>
                 <outlet property="guardarBtn" destination="mjN-ha-A9K" id="lNk-b1-IhR"/>
                 <outlet property="imageView" destination="Mf6-hK-Lnt" id="dyY-Yh-uke"/>
                 <outlet property="limpiarBtn" destination="dTE-aW-vKK" id="xGZ-em-sqV"/>
@@ -101,6 +103,24 @@
                 </mask>
             </variation>
             <point key="canvasLocation" x="458" y="238"/>
+        </view>
+        <view contentMode="scaleToFill" id="5sm-1f-m6X">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kb-Cn-hat">
+                    <rect key="frame" x="271" y="291" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2kb-Cn-hat" firstAttribute="centerY" secondItem="5sm-1f-m6X" secondAttribute="centerY" id="Tn5-Nq-aie"/>
+                <constraint firstItem="2kb-Cn-hat" firstAttribute="centerX" secondItem="5sm-1f-m6X" secondAttribute="centerX" id="ywS-9Y-lhU"/>
+            </constraints>
+            <point key="canvasLocation" x="1188" y="238"/>
         </view>
     </objects>
 </document>
