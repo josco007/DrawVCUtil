@@ -144,10 +144,26 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     blockedMessage = true;
     blockedMessageStr = pMessage;
     
-    [blockViewMessage setFrame:imageView.frame];
+    [blockViewMessage setFrame:CGRectMake(0, 0, imageView.frame.size.width, imageView.frame.size.height)];
     [blockViewMessageLbl setText:pMessage];
     
     [self.view addSubview:blockViewMessage];
+    
+    
+    [blockViewMessage  setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    /*
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blockViewMessage attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeWidth multiplier:1 constant:0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blockViewMessage attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeHeight multiplier:1 constant:0]];
+    */
+    
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blockViewMessage attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blockViewMessage attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blockViewMessage attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:blockViewMessage attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:imageView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
+    
     
 }
 
@@ -205,13 +221,17 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     if (blockedMessage){
         [self blockDrawWithMessage:blockedMessageStr];
     }
-
-    
-
+ 
 }
+
 
 -(void)viewDidAppear:(BOOL)animated{
 
+    
+    if (blockedMessage){
+        [self blockDrawWithMessage:blockedMessageStr];
+    }
+    
     /*NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
      */
