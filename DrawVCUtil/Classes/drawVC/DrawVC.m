@@ -103,7 +103,7 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
 {
     
     
-    if (blockViewMessage){
+    if (blockedMessage){
         return;
     }
     
