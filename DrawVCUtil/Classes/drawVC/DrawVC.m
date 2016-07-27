@@ -102,6 +102,11 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
+    
+    if (blockViewMessage){
+        return;
+    }
+    
     UITouch *touch = [touches anyObject];
     
     previousPoint2 = previousPoint1;
@@ -140,6 +145,7 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
 }
 
 -(void) blockDrawWithMessage:(NSString*)pMessage{
+    
     
     blockedMessage = true;
     blockedMessageStr = pMessage;
