@@ -216,6 +216,11 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     // Do any additional setup after loading the view from its nib.
     [imageView layer].borderColor = [UIColor blackColor].CGColor;
     [imageView layer].borderWidth = .5;
+    
+    [blockViewMessage layer].borderColor = [UIColor blackColor].CGColor;
+    [blockViewMessage layer].borderWidth = .5;
+    
+    
     //limpiarBtn.transform = CGAffineTransformMakeRotation(M_PI_2);
     //guardarBtn.transform = CGAffineTransformMakeRotation(M_PI_2);
     if (_titleLbl.length == 0) {
