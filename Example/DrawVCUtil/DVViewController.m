@@ -30,8 +30,9 @@
     drawVC = [[DrawVC alloc] initWithNibName:@"DrawVC" bundle:[NSBundle bundleForClass:[DrawVC class]]];
     drawVC.delegate = self;
     [drawVC setShowSaveAlert:YES];
-    [drawVC blockDrawWithMessage:@"hola"];
-   [self presentViewController:drawVC animated:YES completion:nil];
+    //[drawVC blockDrawWithMessage:@"BlockView"];
+    [self presentViewController:drawVC animated:YES completion:nil];
+    //[drawVC setButtonsMode: ThreeButtonsAndABox];
     
 }
 

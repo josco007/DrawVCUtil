@@ -54,6 +54,46 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
 }
 
 
+
+- (void) setButtonsMode:(enum ButtonsModes) pMode{
+    buttonsMode = pMode;
+    
+    for(UIView *subview in [buttonsTme subviews]) {
+        [subview removeFromSuperview];
+    }
+    
+    switch (pMode) {
+        case DefaultButtonsMode:
+            //defaultButtonsModeView.frame = CGRectMake(0, 0, buttonsTme.frame.size.width, buttonsTme.frame.size.height);
+            
+            [buttonsTme addSubview:defaultButtonsModeView];
+            
+            [defaultButtonsModeView setTranslatesAutoresizingMaskIntoConstraints:false];
+
+            
+            [defaultButtonsModeView.superview addConstraint:[defaultButtonsModeView.topAnchor constraintEqualToAnchor: defaultButtonsModeView.superview.topAnchor]];
+            [defaultButtonsModeView.superview addConstraint:[defaultButtonsModeView.leftAnchor constraintEqualToAnchor:defaultButtonsModeView.superview.leftAnchor]];
+            [defaultButtonsModeView.superview addConstraint:[defaultButtonsModeView.bottomAnchor constraintEqualToAnchor:defaultButtonsModeView.superview.bottomAnchor]];
+            [defaultButtonsModeView.superview addConstraint:[defaultButtonsModeView.rightAnchor constraintEqualToAnchor:defaultButtonsModeView.superview.rightAnchor]];
+           
+            break;
+            
+        case ThreeButtonsAndABox:
+            
+            [buttonsTme addSubview:threeButtonsAndABoxView];
+            
+            [threeButtonsAndABoxView setTranslatesAutoresizingMaskIntoConstraints:false];
+            
+            [threeButtonsAndABoxView.superview addConstraint:[threeButtonsAndABoxView.topAnchor constraintEqualToAnchor: threeButtonsAndABoxView.superview.topAnchor]];
+            [threeButtonsAndABoxView.superview addConstraint:[threeButtonsAndABoxView.leftAnchor constraintEqualToAnchor:threeButtonsAndABoxView.superview.leftAnchor]];
+            [threeButtonsAndABoxView.superview addConstraint:[threeButtonsAndABoxView.bottomAnchor constraintEqualToAnchor:threeButtonsAndABoxView.superview.bottomAnchor]];
+            [threeButtonsAndABoxView.superview addConstraint:[threeButtonsAndABoxView.rightAnchor constraintEqualToAnchor:threeButtonsAndABoxView.superview.rightAnchor]];
+        
+            
+            break;
+    }
+}
+
 #pragma mark - User interaction
 - (IBAction)limpiarBtnTocuhUpInside:(id)sender {
     
@@ -84,6 +124,7 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     isPresented = NO;
     [self.presentingViewController dismissViewControllerAnimated: YES completion: nil];
 }
+
 
 #pragma mark - touches delegate
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -232,6 +273,8 @@ CGPoint midPoint(CGPoint p1, CGPoint p2)
     if (blockedMessage){
         [self blockDrawWithMessage:blockedMessageStr];
     }
+    
+    [self setButtonsMode:DefaultButtonsMode];
  
 }
 

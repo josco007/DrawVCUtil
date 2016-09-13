@@ -13,6 +13,12 @@
 -(void)drawVC:(UIViewController*)pDrawVC viewDidAppearFinished:(NSObject*) pData;
 @end
 
+static enum ButtonsModes{
+    DefaultButtonsMode,
+    ThreeButtonsAndABox
+};
+
+
 @interface DrawVC : UIViewController<UIAlertViewDelegate>{
     
 #pragma mark - variables
@@ -26,6 +32,8 @@
     
     BOOL blockedMessage;
     NSString * blockedMessageStr;
+    
+    enum ButtonsModes buttonsMode;
 
 
     
@@ -41,6 +49,9 @@
     IBOutlet UIView *tmeBetweenCleanAndSaveView;
     IBOutlet UIView *blockViewMessage;
     IBOutlet UILabel *blockViewMessageLbl;
+    __weak IBOutlet UIView *buttonsTme;
+    IBOutlet UIView *threeButtonsAndABoxView;
+    IBOutlet UIView *defaultButtonsModeView;
     
 
     
@@ -55,5 +66,9 @@
 
 -(void) blockDrawWithMessage:(NSString*)pMessage;
 -(void) removeBlockViewMessage;
+- (void) setButtonsMode:(enum ButtonsModes) pMode;
+
+
+
 
 @end
