@@ -13,7 +13,7 @@
 -(void)drawVC:(UIViewController*)pDrawVC viewDidAppearFinished:(NSObject*) pData;
 @end
 
-static enum ButtonsModes{
+enum ButtonsModes{
     DefaultButtonsMode,
     ThreeButtonsAndABox
 };
