@@ -46,7 +46,7 @@ enum ButtonsModes{
     //UILabels
     IBOutlet UILabel *tituloFirmaLbl;
     //UIViews
-    IBOutlet UIView *tmeBetweenCleanAndSaveView;
+    IBOutlet UIView *box1;
     IBOutlet UIView *blockViewMessage;
     IBOutlet UILabel *blockViewMessageLbl;
     __weak IBOutlet UIView *buttonsTme;
@@ -62,7 +62,7 @@ enum ButtonsModes{
 @property (nonatomic) BOOL showSaveAlert;
 @property (nonatomic, unsafe_unretained) id <DrawVCDelegate> delegate;
 @property (nonatomic)  NSString *titleLbl;
-@property (strong, nonatomic) IBOutlet UIView *tmeBetweenCleanAndSaveView;
+@property (strong, nonatomic) IBOutlet UIView *box1;
 
 -(void) blockDrawWithMessage:(NSString*)pMessage;
 -(void) removeBlockViewMessage;

@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="blockViewMessage" destination="5sm-1f-m6X" id="aTk-d5-7ba"/>
                 <outlet property="blockViewMessageLbl" destination="2kb-Cn-hat" id="eHD-IL-oMM"/>
+                <outlet property="box1" destination="N4v-8Q-ePy" id="Gz0-JI-CGe"/>
                 <outlet property="buttonsTme" destination="yXr-a1-dTW" id="nS9-vf-43s"/>
                 <outlet property="defaultButtonsModeView" destination="Wh0-bm-pYq" id="d2s-xI-p7b"/>
                 <outlet property="imageView" destination="Mf6-hK-Lnt" id="dyY-Yh-uke"/>

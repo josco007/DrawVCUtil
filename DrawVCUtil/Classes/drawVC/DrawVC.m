@@ -41,7 +41,7 @@
 @implementation DrawVC
 
 @synthesize isPresented;
-@synthesize tmeBetweenCleanAndSaveView;
+@synthesize box1;
 @synthesize showSaveAlert;
 @synthesize blockedMessage;
 @synthesize blockedMessageStr;
