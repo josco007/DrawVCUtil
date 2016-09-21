@@ -63,6 +63,8 @@ enum ButtonsModes{
 @property (nonatomic, unsafe_unretained) id <DrawVCDelegate> delegate;
 @property (nonatomic)  NSString *titleLbl;
 @property (strong, nonatomic) IBOutlet UIView *box1;
+//@property (weak, nonatomic) IBOutlet UIView *buttonsTme;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonsTmeHeightConstraint;
 
 -(void) blockDrawWithMessage:(NSString*)pMessage;
 -(void) removeBlockViewMessage;

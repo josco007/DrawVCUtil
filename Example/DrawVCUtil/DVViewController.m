@@ -32,7 +32,11 @@
     [drawVC setShowSaveAlert:YES];
     //[drawVC blockDrawWithMessage:@"BlockView"];
     [self presentViewController:drawVC animated:YES completion:nil];
+    
+    
     //[drawVC setButtonsMode: ThreeButtonsAndABox];
+    //drawVC.buttonsTmeHeightConstraint.constant = 100;
+    
     
 }
 
